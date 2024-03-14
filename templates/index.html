@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block body %}
+    <div class="btn-formulario">
+        <!--url_for se usa para linkear las paginas y el argumento es la funcion en el archivo python que renderiza esa pagina-->
+        <a href="{{url_for('registrar')}}">
+            <input type="submit" value="Sign Up">
+        </a>
+        <a href="{{url_for('acceder')}}">
+            <input type="submit" value="Log In">
+        </a>    
+    </div>
+{% endblock %}
