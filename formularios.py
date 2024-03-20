@@ -14,6 +14,6 @@ class FormRegistro(FlaskForm):
     btn_registrar = SubmitField('Registrar')
     
 class FormAcceso(FlaskForm):
-    email = StringField('Email', validators = [DataRequired(), Email()])
+    correo = StringField('Email', validators = [DataRequired(), Email()])
     contrasena = PasswordField('Contraseña', validators = [DataRequired()])
     btn_acceder = SubmitField('Acceder')

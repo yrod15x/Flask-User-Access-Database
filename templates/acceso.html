@@ -1,5 +1,18 @@
 {% extends "base.html" %}
 
 {% block body%}
-
+<div class="formulario">
+    <form action="" method="POST">
+        {{ formulario.hidden_tag() }}
+        <div class="inputs">
+            {{ formulario.correo(placeholder='Email')}}
+        </div>
+        <div class="inputs">
+            {{ formulario.contrasena(placeholder='Contraseña')}}
+        </div>
+        <div class="btn-form">
+            {{ formulario.btn_acceder(placeholder='Contraseña', class='btn-form')}}
+        </div>
+    </form>
+</div>
 {% endblock %}

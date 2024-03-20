@@ -20,9 +20,11 @@ def registrar():
         return redirect(url_for('index'))
     return render_template('registro.html', titulo = "User's Page", titulo_banner = "Registration", annio = annio, formulario = formulario)
 
-@app.route('/acceder')
+@app.route('/acceder', methods = ['POST', 'GET'])
 def acceder():
     formulario = FormAcceso()
+    if formulario.validate_on_submit():
+        return redirect(url_for('index'))
     return render_template('acceso.html', titulo = "User's Page", titulo_banner = "Loggin In", annio = annio, formulario = formulario)
 
 if __name__ == "__main__":

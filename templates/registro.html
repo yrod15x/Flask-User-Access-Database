@@ -3,6 +3,7 @@
 {% block body%}
     <div class="formulario">
         <form action="" method="POST">
+            <!--Se usa para prevenir ataques al formulario-->
             {{ formulario.hidden_tag() }}
             <div class="inputs">
                 {{ formulario.nom_usuario(placeholder='Usuario')}}
