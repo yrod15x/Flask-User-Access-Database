@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect, url_for
+from flask import Flask, render_template, redirect, url_for, request
 from datetime import datetime
 from formularios import FormAcceso, FormRegistro
 
@@ -17,7 +17,6 @@ def registrar():
     formulario = FormRegistro()
     #Si el usuario escribio bien los campos lo regresa a la pagina de inicio
     if formulario.validate_on_submit():
-        print('A casa')
         return redirect(url_for('index'))
     return render_template('registro.html', titulo = "User's Page", titulo_banner = "Registration", annio = annio, formulario = formulario)
 

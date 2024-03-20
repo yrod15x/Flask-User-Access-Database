@@ -2,13 +2,13 @@
 
 {% block body%}
     <div class="formulario">
-        <form action="/registrar" method="post">
+        <form action="" method="POST">
             {{ formulario.hidden_tag() }}
             <div class="inputs">
                 {{ formulario.nom_usuario(placeholder='Usuario')}}
             </div>
             <div class="inputs">
-                {{ formulario.email(placeholder='Email')}}
+                {{ formulario.correo(placeholder='Email')}}
             </div>
             <div class="inputs">
                 {{ formulario.contrasena(placeholder='Contraseña')}}
