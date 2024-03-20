@@ -1,5 +1,27 @@
 {% extends "base.html" %}
 
 {% block body%}
-
+    <div class="formulario">
+        <form action="/registrar" method="post">
+            {{ formulario.hidden_tag() }}
+            <div class="inputs">
+                {{ formulario.nom_usuario(placeholder='Usuario')}}
+            </div>
+            <div class="inputs">
+                {{ formulario.email(placeholder='Email')}}
+            </div>
+            <div class="inputs">
+                {{ formulario.contrasena(placeholder='Contraseña')}}
+            </div>
+            <div class="inputs">
+                {{ formulario.rep_contrasena(placeholder='Confirmar Contraseña')}}
+            </div>
+            <div class="btn-form">
+                {{ formulario.btn_registrar(placeholder='Contraseña', class='btn-form')}}
+            </div>
+        </form>
+        <div class="imagen">
+            <img src="/static/register.png" alt="logo de registro">
+        </div>
+    </div>
 {% endblock %}

@@ -40,7 +40,7 @@ body{
         grid-row: 2;
         background: rgb(2,0,36);
         background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(250,250,250,1) 0%, rgba(0,212,255,1) 100%);
-        .btn-formulario{
+        .btn-formulario, .formulario{
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: auto;
@@ -59,10 +59,43 @@ body{
             input{
                background-color: rgb(4, 170, 241); 
                color: #fff;
-               font-size: 1.5dvw;
+               font-size: 1.3dvw;
                padding: 0.5dvh 1.5dvw;
                width: 14dvw;
                border-radius: 1dvw;
+            }
+        }
+        .formulario
+        {
+            form{
+                display: flex;
+                flex-flow: column nowrap;
+                align-items: center;
+                gap: 1dvh;
+                input{
+                    background:rgb(255, 255, 255, 0.5);
+                    color: rgb(2, 165, 198);
+                    width: 18dvw;
+                    border-radius: 0%;
+                    margin-top: 1.8dvh;
+                    border-bottom: 0.1dvw solid rgba(0, 25, 30, 1);
+                    font-size: 1.2dvw;
+                    font-weight: lighter;
+                }
+                .btn-form{
+                    color: #fff;
+                    width: 9dvw;
+                    input{
+                        background: rgba(0, 25, 30, 1);
+                        margin-top: 3dvh;
+                    }
+                }
+            }
+        }
+        .imagen
+        {
+            img{
+                max-width: 25dvw;
             }
         }
     }

@@ -40,30 +40,57 @@ body main {
   background: rgb(2, 0, 36);
   background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(250, 250, 250) 0%, rgb(0, 212, 255) 100%);
 }
-body main .btn-formulario {
+body main .btn-formulario, body main .formulario {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   width: 80dvw;
   justify-items: center;
 }
-body main .btn-formulario .registrar {
+body main .btn-formulario .registrar, body main .formulario .registrar {
   grid-column-start: 1;
   grid-column-end: 1;
   align-self: start;
 }
-body main .btn-formulario .acceder {
+body main .btn-formulario .acceder, body main .formulario .acceder {
   grid-column-start: 2;
   grid-column-end: 2;
   align-self: end;
 }
-body main .btn-formulario input {
+body main .btn-formulario input, body main .formulario input {
   background-color: rgb(4, 170, 241);
   color: #fff;
-  font-size: 1.5dvw;
+  font-size: 1.3dvw;
   padding: 0.5dvh 1.5dvw;
   width: 14dvw;
   border-radius: 1dvw;
+}
+body main .formulario form {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 1dvh;
+}
+body main .formulario form input {
+  background: rgba(255, 255, 255, 0.5);
+  color: rgb(2, 165, 198);
+  width: 18dvw;
+  border-radius: 0%;
+  margin-top: 1.8dvh;
+  border-bottom: 0.1dvw solid rgb(0, 25, 30);
+  font-size: 1.2dvw;
+  font-weight: lighter;
+}
+body main .formulario form .btn-form {
+  color: #fff;
+  width: 9dvw;
+}
+body main .formulario form .btn-form input {
+  background: rgb(0, 25, 30);
+  margin-top: 3dvh;
+}
+body main .imagen img {
+  max-width: 25dvw;
 }
 body footer {
   grid-column-start: 1;
