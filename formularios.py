@@ -6,7 +6,7 @@ from wtforms import StringField, PasswordField, SubmitField
 from wtforms.validators import DataRequired, Length, Email, EqualTo, InputRequired
 
 class FormRegistro(FlaskForm):
-    """Cada formulario se hace en base a una casa para su posterior instanciamiento en los archivos HTML. Estas clases heredan las variables y metodos de la clas FlaskForm"""
+    """Cada formulario se hace en base a una clase para su posterior instanciamiento en los archivos HTML. Estas clases heredan las variables y metodos de la clas FlaskForm"""
     nom_usuario = StringField('Nombre Usuario', validators = [DataRequired(), Length(min=4, max= 20)])
     correo = StringField(label=('Email'), validators = [DataRequired(), Email()])
     contrasena = PasswordField('Contraseña', validators = [DataRequired()])
